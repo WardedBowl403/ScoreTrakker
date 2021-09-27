@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.io.*;
 
 public class ScoreTrakker {
 	private ArrayList<Student> students;
 	
 	void loadDataFile(String fileName) {
-		
+	
 	}
 	
 	void printInOrder() {
