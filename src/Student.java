@@ -9,6 +9,7 @@ public class Student implements Comparable<Student> {
 	}
 	
 	@Override
+	//Compares student scores
 	public int compareTo(Student s) {
 		if(this.score < s.score) {
 			return -1;

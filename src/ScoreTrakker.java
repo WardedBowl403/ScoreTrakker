@@ -10,6 +10,7 @@ public class ScoreTrakker {
 		students = new ArrayList<Student>();
 	}
 	
+	//Populates students ArrayList, catches formatting errors
 	void loadDataFile(String fileName) throws FileNotFoundException{
 		students = new ArrayList<Student>();
 		FileReader reader = new FileReader(fileName);
@@ -28,6 +29,7 @@ public class ScoreTrakker {
 		}
 	}
 	
+	//Prints the students list
 	void printInOrder() {
 		System.out.println("Student Scores List");
 		for(Student student : students) {
@@ -36,6 +38,7 @@ public class ScoreTrakker {
 		System.out.println("");
 	}
 	
+	//Catches non-existant files
 	void processFiles() {
 		for(String file : files) {
 			try {
